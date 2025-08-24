@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shanthi | SEO Analyst Portfolio</title>
+  <meta name="description" content="Shanthi — SEO Analyst specializing in on-page SEO, off-page SEO, technical SEO, website audits, keyword research, GBP optimization, and blog content writing." />
+  <meta name="author" content="Shanthi" />
+  <link rel="canonical" href="https://your-username.github.io/" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: rgba(18, 24, 33, 0.92);
+      --text: #e8eef7;
+      --muted: #a7b0c0;
+      --primary: #4f8cff;
+      --accent: #22c55e;
+      --border: #1e2633;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+      --radius: 16px;
+      --maxw: 1100px;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wrap { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+    header {
+      position: sticky; top: 0; z-index: 50;
+      backdrop-filter: blur(10px);
+      background: rgba(0,0,0,0.6);
+    }
+    .nav { display: flex; justify-content: space-between; align-items: center; height: 64px; }
+    .brand { font-weight: 700; }
+    nav ul { display: flex; list-style: none; gap: 18px; padding: 0; margin: 0; }
+    nav a { color: white; text-decoration: none; }
+
+    /* Hero with video background */
+    .hero {
+      position: relative;
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+    .hero video, .hero img.bg {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;
+      z-index: -1;
+    }
+    .hero .overlay {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(0,0,0,0.55);
+      z-index: -1;
+    }
+    .hero-content {
+      z-index: 2;
+      max-width: 700px;
+      padding: 20px;
+    }
+    .hero h1 { font-size: clamp(32px, 5vw, 56px); margin-bottom: 20px; }
+    .hero p { font-size: 18px; color: #e2e8f0; }
+
+    /* About section */
+    section { padding: 64px 0; }
+    .section-title { font-size: 28px; margin-bottom: 16px; }
+    .about-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    footer { padding: 32px; text-align: center; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">Shanthi<span style="color:var(--primary)">.SEO</span></div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero with video or fallback image -->
+  <section class="hero">
+    <video autoplay muted loop playsinline poster="hero-image.jpg">
+      <source src="hero-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Hi, I'm Shanthi — SEO Analyst</h1>
+      <p>I work on On‑page, Off‑page & Technical SEO, Website Audits, Keyword Analysis, GBP optimization, and Content Writing.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="wrap">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-card">
+        <p>I'm Shanthi, an SEO analyst with experience in hotels, real estate, software, and e‑commerce. I help businesses improve visibility with technical SEO fixes, on‑page improvements, keyword research, content writing, and Google Business Profile optimization. My approach is simple: identify what matters, fix what’s broken, and build what users and search engines love.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Placeholder for rest of site sections -->
+  <section id="skills">
+    <div class="wrap">
+      <h2 class="section-title">Skills</h2>
+      <p>Keyword Research • Technical SEO • On‑Page • Off‑Page • Website Audits • GBP Optimization • Blog Content</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2 class="section-title">Services</h2>
+      <p>Website Audits, Keyword Analysis, Technical Fixes, Content Planning, GBP Optimization</p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="section-title">Contact</h2>
+      <p>Email: <a href="mailto:shanthipsv@gmail.com">shanthipsv@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Shanthi — SEO Analyst</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
